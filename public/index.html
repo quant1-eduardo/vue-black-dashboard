@@ -44,7 +44,13 @@
       href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
       rel="stylesheet"
     />
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=marker&callback=initMap"></script>
+    <script>
+      // Global callback function for Google Maps API
+      function initMap() {
+        console.log('Google Maps API loaded successfully');
+      }
+    </script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.css"
       rel="stylesheet"

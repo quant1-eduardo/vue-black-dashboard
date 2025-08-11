@@ -7,9 +7,9 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "cross-env CI=false vue-cli-service build",
-    "e2e": "node test/e2e/runner.js",
     "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve --open",
+    "e2e": "node test/e2e/runner.js",
     "lint-fix": "vue-cli-service lint --fix",
     "prettify": "prettier --write ."
   },
@@ -19,18 +19,24 @@
     "register-service-worker": "^1.7.2",
     "vue": "2.7.14",
     "vue-chartjs": "3.5.1",
+    "vue-class-component": "^7.2.3",
     "vue-i18n": "8.28.2",
+    "vue-property-decorator": "^9.1.2",
     "vue-router": "3.6.5",
     "vue-router-prefetch": "1.6.3",
     "vue2-transitions": "0.3.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.21.8",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "5.0.8",
     "@vue/cli-plugin-eslint": "5.0.8",
     "@vue/cli-plugin-pwa": "5.0.8",
+    "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "5.0.8",
     "@vue/eslint-config-prettier": "7.1.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
     "cross-env": "^7.0.3",
     "eslint": "8.41.0",
     "eslint-plugin-prettier": "4.2.1",
@@ -38,6 +44,7 @@
     "prettier": "2.8.8",
     "sass": "1.62.1",
     "sass-loader": "10.2.0",
+    "typescript": "~4.5.5",
     "vue-cli-plugin-i18n": "2.3.2",
     "vue-template-compiler": "2.7.14"
   },
@@ -45,5 +52,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 11"
-  ]
+  ],
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
 }
